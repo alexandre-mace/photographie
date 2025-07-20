@@ -23,7 +23,7 @@ export function parseMarkdownContent(markdown: string): Section[] {
   const lines = markdown.split('\n');
   const sections: Section[] = [];
   let currentSection: Section | null = null;
-  let currentSubsection: { title: string; content: string[] } | null = null;
+  let currentSubsection: { title: string; content: string[]; table?: { headers: string[]; rows: string[][] } } | null = null;
   let currentTable: { headers: string[]; rows: string[][] } | null = null;
   let inTable = false;
   let inQuote = false;
