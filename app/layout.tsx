@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Photographie",
-  description: "Maîtrisez les bases techniques pour transformer votre créativité en images inoubliables",
+  description: "Maîtrise les bases techniques pour transformer ta créativité en images inoubliables",
 };
 
 export default function RootLayout({

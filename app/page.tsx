@@ -25,7 +25,7 @@ export default function Home() {
         <section className="py-20">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-start">
             <p className="tracking-tighter leading-16 text-5xl mb-8 mx-auto">
-              Maîtrisez les ☞ <span className={"underline underline-offset-4"}>bases techniques</span> pour transformer <br/> votre créativité en ✧ <span className={"underline underline-offset-4"}>images inoubliables</span>
+              Maîtrise les ☞ <span className={"underline underline-offset-4"}>bases techniques</span> pour transformer <br/> ta créativité en ✧ <span className={"underline underline-offset-4"}>images inoubliables</span>
             </p>
           </div>
         </section>

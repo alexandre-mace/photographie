@@ -19,7 +19,7 @@
 | **Argentique 35 mm**    | Rendu unique, coût d’entrée faible  | Film + labo           | Pentax K1000    |
 | Moyen format            | Négatif immense, piqué              | Prix, encombrement    | Mamiya RB67     |
 
-> Entre le smartphone de poche et la chambre grand format, chaque système répond à un besoin : mobilité, contrôle, look, budget. Pour un·e débutant·e en argentique, le 35 mm est l’équilibre idéal : matériel abordable, films faciles à trouver, accessoires nombreux. Connaître cette « carte des formats » évite de se perdre dans le jargon (APS-C, micro-4/3, 120, etc.) et aide à comprendre pourquoi un même 50 mm ne donnera pas le même champ sur un Leica M6 (24×36 mm) et un Hasselblad 500 C (6×6 cm).
+> Entre le smartphone de poche et la chambre grand format, chaque système répond à un besoin : mobilité, contrôle, look, budget. Pour débuter en argentique, le 35 mm est l'équilibre idéal : matériel abordable, films faciles à trouver, accessoires nombreux. Connaître cette « carte des formats » t'évite de te perdre dans le jargon (APS-C, micro-4/3, 120, etc.) et t'aide à comprendre pourquoi un même 50 mm ne donnera pas le même champ sur un Leica M6 (24×36 mm) et un Hasselblad 500 C (6×6 cm).
 
 ---
 
