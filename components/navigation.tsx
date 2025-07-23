@@ -14,6 +14,25 @@ interface NavigationProps {
 export function Navigation({ sections }: NavigationProps) {
   const [activeSection, setActiveSection] = useState('')
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  
+  // Debug: afficher toutes les sections reçues
+  console.log('Navigation - Sections reçues:', sections.map(s => s.title));
+
+  // Versions courtes des titres pour le menu desktop
+  const getShortTitle = (title: string) => {
+    // Créer un mapping plus robuste
+    if (title.includes("technique")) return "Technique";
+    if (title.includes("appareils")) return "Appareils";
+    if (title.includes("triangle")) return "Triangle"; 
+    if (title.includes("ouverture")) return "Ouverture";
+    if (title.includes("focale")) return "Focale";
+    if (title.includes("obturation")) return "Vitesse";
+    if (title.includes("ISO")) return "ISO";
+    if (title.includes("Composition")) return "Composition";
+    if (title.includes("Conclusion")) return "Conclusion";
+    
+    return title;
+  }
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -48,22 +67,23 @@ export function Navigation({ sections }: NavigationProps) {
       {/* Desktop Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm border-b">
         <div className="px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+          <div className="flex justify-between items-center h-12">
             <div className="flex items-center gap-1">
               <span className="font-semibold tracking-tight text-lg">Photographie</span>
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden md:flex items-center gap-1">
+            <div className="hidden md:flex items-center gap-2 flex-wrap">
               {sections.map(({ id, title }) => (
                 <Button
                   key={id}
                   variant={activeSection === id ? 'default' : 'ghost'}
                   size="sm"
                   onClick={() => scrollToSection(id)}
-                  className="text-sm"
+                  className="text-sm px-2 py-1 h-7 whitespace-nowrap"
+                  title={title}
                 >
-                  {title}
+                  {getShortTitle(title)}
                 </Button>
               ))}
             </div>

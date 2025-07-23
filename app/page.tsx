@@ -11,10 +11,13 @@ export default function Home() {
   const sections = parseMarkdownContent(markdownContent)
 
   // Create navigation items
-  const navSections = sections.map(section => ({
-    id: section.id,
-    title: section.title
-  }))
+  const navSections = sections.map(section => {
+    console.log('Section parsée:', JSON.stringify(section.title)); // Debug
+    return {
+      id: section.id,
+      title: section.title
+    }
+  })
 
   return (
     <div className="min-h-screen bg-gray-50">
